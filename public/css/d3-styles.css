@@ -1,0 +1,22 @@
+body {
+  font: 10px sans-serif;
+}
+
+#d3-example {
+  margin-bottom: 200px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.tile {
+  shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

@@ -1,0 +1,161 @@
+// Static document where we store the main information on the different testbeds that shape the FIESTA federation
+//Note: For the future, it is envisaged to send a query
+ var testbeds_location = [
+ // SmartSantander
+ {
+     "type": "Feature",
+     "geometry": {
+         "type": "Point",
+         "coordinates": [-3.83225, 43.47105] 
+     },
+     "properties": {
+         "title": "Santander",
+         "description": "SmartSantander Testbed",
+         "marker-color": "#EE7600",
+         "marker-size": "large",
+         "marker-symbol": "city",
+         "zoom": 12,
+         "logo": "../../images/logos/SmS.png"
+     }
+ },
+// University of Surrey
+  {
+     "type": "Feature",
+     "geometry": {
+         "type": "Point",
+         "coordinates": [-0.593219, 51.243375]
+     },
+     "properties": {
+         "title": "Guilford",
+         "description": "Smart ICS",
+         "marker-color": "#EE7600",
+         "marker-size": "large",
+         "marker-symbol": "building",
+         "zoom": 16
+     }
+ }, 
+// Com4Innov
+ {
+     "type": "Feature",
+     "geometry": {
+         "type": "Point",
+         "coordinates": [7.041140, 43.627177]
+     },
+     "properties": {
+         "title": "Sophia Antipolis",
+         "description": "Com4Innov's SmartBuilding",
+         "marker-color": "#EE7600",
+         "marker-size": "large",
+         "marker-symbol": "building",
+         "zoom": 16
+     }
+ }, 
+ // KETI
+ {
+     "type": "Feature",
+     "geometry": {
+         "type": "Point",
+         "coordinates": [127.012644, 37.499202]
+     },
+     "properties": {
+         "title": "Seoul",
+         "description": "KETI Smart Building",
+         "marker-color": "#EE7600",
+         "marker-size": "large",
+         "marker-symbol": "building",
+         "zoom": 16
+     }
+ }];
+
+
+
+ var ve_layer = [
+ // Smart ICS
+ {
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title":"Smart ICS Building"
+        },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.5935326218605042,
+              51.243525735400745
+            ],
+            [
+              -0.5935326218605042,
+              51.243183198961894
+            ],
+            [
+              -0.592913031578064,
+              51.243183198961894
+            ],
+            [
+              -0.5929183959960936,
+              51.243517339930285
+            ],
+            [
+              -0.5935326218605042,
+              51.243525735400745
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+},
+{
+      "type": "Feature",
+      "properties": {
+        "title": "Com4Innov Facilities"
+        },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              7.041007876396179,
+              43.62715655122217
+            ],
+            [
+              7.041072249412537,
+              43.62703617789269
+            ],
+            [
+              7.041391432285309,
+              43.62713713618533
+            ],
+            [
+              7.04123854637146,
+              43.627247801811336
+            ],
+            [
+              7.041096389293671,
+              43.62720703028861
+            ],
+            [
+              7.041082978248596,
+              43.62723226980595
+            ],
+            [
+              7.041045427322387,
+              43.6272264453029
+            ],
+            [
+              7.0410749316215515,
+              43.62718567376567
+            ],
+            [
+              7.041007876396179,
+              43.62715655122217
+            ]
+          ]
+        ]
+      }
+    }
+];

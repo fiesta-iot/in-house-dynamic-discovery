@@ -1,0 +1,8 @@
+production:
+  iot_registry: 'https://xxxx/iot-registry/api'
+  mapbox_style: 'username/code' 
+  mapbox_access_token: 'token'
+  openam_user: 'user'
+  openam_password: 'password'
+  openam_authentication_endpoint: 'https://xxxx/openam/json/authenticate'  
+
