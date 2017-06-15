@@ -1,9 +1,9 @@
-#Dynamic Discovery of IoT Resources for Testbed Agnostic Data Access
+# Dynamic Discovery of IoT Resources for Testbed Agnostic Data Access
 
 This application focuses on the (dynamic) harvest of IoT-based data in a testbed agnostic manner. In layman’s terms, we aim at retrieving data from sensors coming from heterogeneous platforms (as the ones that compose the FIESTA-IoT federation) in a single and common solution. For this experiment, and according to the legacy description of this pilot, we only focus on the weather/environmental domain. Namely, we will only show resources and observations that have to do with a subset of physical phenomena (e.g. temperature, illuminance, wind speed, etc.), where external running this experiment will be able to see the resources on a map and dynamically select subsets of them, in order to play around with the information (i.e. observations) the actual sensors generate.
 Amongst the set of features that we support in this experiment, we stand out the following ones: graphical representation of resources, location and phenomena-based resource discovery, retrieval of observations, combination of data for the generation of statistical analysis, graphical representation of these stats, etc.
 
-##Installation
+## Installation
 
 We have chosen the Express (Node.js) framework to build the application server (backend). At client side, a typical combination of Javascript + HTML, including various popular libraries that deal with graphical outputs, such as Leaflet, Turf or D3.
 
@@ -30,12 +30,12 @@ production:
 
 Where: 
 - **production**: This is just the name given to the set of variables
-- **iot_registry'**: Address of the iot-registry API [**No need to tamper**]
+- **iot_registry**: Address of the iot-registry API [**Please do not change it**]
 - **mapbox_style**: You must have an account in [Mapbox](https://www.mapbox.com/) in order to generate the output map. This first input represent the base layer over which the rest of the map will be built [**Necessary**]
 - **mapbox_access_token**: This second field is required to authenticate yourself and load your personalized map [**Necessary**]
-- **openam_user**: The FIESTA-IoT platform imposes that only registered users bound to the *experimenter* role are able to interact with the iot-registry API. Therefore, you have had to sign up [here](https://platform.fiesta-iot.eu/openam/XUI/#register/) and request for a promotion to *experimenter* (by default, you will be given a basic *observer* role) [**Necessary**]
-- **openam_password**: Password tied to the above user [**Necessary**]
-- **openam_authentication_endpoint**: As its name hints, through this address the system will check your identity, giving you a SSO token in case your credentials are correct
+- **openam_user**: Your FIESTA-IoT username. The FIESTA-IoT platform imposes that only registered users bound to the *experimenter* role are able to interact with the iot-registry API. Therefore, you have had to sign up [here](https://platform.fiesta-iot.eu/openam/XUI/#register/) and request for a promotion to *experimenter* (by default, you will be given a basic *observer* role) [**Necessary**]
+- **openam_password**: Your password associated to your FIESTA-IoT username [**Necessary**]
+- **openam_authentication_endpoint**: As its name suggests, through this address the system will check your identity and will give you a SSO token in case your credentials are correct [**Please do not change it**]
 
 ## Links
 
