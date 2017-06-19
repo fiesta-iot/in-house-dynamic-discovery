@@ -21,7 +21,8 @@
     "jQuery": "^3.1.1",
     "datatables.net": "^1.10.13",
     "d3": "^4.4.4",
-    "mathjs": "^3.10.0",    
-    "Leaflet.EasyButton": "^2.0.0"
+    "mathjs": "^3.10.0",
+    "Leaflet.EasyButton": "^2.0.0",
+    "heatmap.js-amd": "^2.0.5"
   }
 }
